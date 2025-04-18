@@ -1,0 +1,182 @@
+2025-04-17 02:27:47 [main] INFO  BaseClass - Config.properties file loaded successfully.
+2025-04-17 02:27:48 [main] INFO  BaseClass - Starting test setup for class: LoginPageTest
+2025-04-17 02:29:09 [main] INFO  BaseClass - Chrome browser launched.
+2025-04-17 02:29:12 [main] INFO  BaseClass - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-04-17 02:29:15 [main] INFO  BaseClass - Static wait for 3 seconds.
+2025-04-17 02:29:16 [main] INFO  ActionDriver - ActionDriver initialized with wait: 30s.
+2025-04-17 02:29:16 [main] INFO  BaseClass - ActionDriver instance created for thread.
+2025-04-17 02:29:16 [main] INFO  ActionDriver - ActionDriver initialized with wait: 30s.
+2025-04-17 02:29:16 [main] INFO  ActionDriver - ActionDriver initialized with wait: 30s.
+2025-04-17 02:29:16 [main] INFO  ActionDriver - Entered text: '21' in By.name: username
+2025-04-17 02:29:16 [main] INFO  ActionDriver - Entered text: 'admin123' in By.cssSelector: input[type='password']
+2025-04-17 02:29:17 [main] INFO  ActionDriver - Clicked element: Tag: button, ID: , Name: , Text: Login
+2025-04-17 02:29:48 [main] WARN  ActionDriver - Element not visible: By.xpath: //*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\konda\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60252/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 04d1b7999fac97512dd4d7255fa070cc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at com.orangehrm.actiondriver.ActionDriver.waitForElementVisible(ActionDriver.java:169) ~[classes/:?]
+	at com.orangehrm.actiondriver.ActionDriver.isDisplayed(ActionDriver.java:95) ~[classes/:?]
+	at com.orangehrm.pages.HomePage.isAdminTabVisible(HomePage.java:49) ~[classes/:?]
+	at com.orangeHRM.test.LoginPageTest.loginTest(LoginPageTest.java:83) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-04-17 02:29:58 [main] INFO  ActionDriver - Comparing text: actual='Invalid credentials' expected='Invalid credentials'
+2025-04-17 02:29:59 [main] INFO  BaseClass - WebDriver quit successfully.
+2025-04-17 02:29:59 [main] INFO  BaseClass - Test teardown completed.
+2025-04-17 02:29:59 [main] INFO  BaseClass - Starting test setup for class: LoginPageTest
+2025-04-17 02:30:00 [main] INFO  BaseClass - Chrome browser launched.
+2025-04-17 02:30:03 [main] INFO  BaseClass - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-04-17 02:30:06 [main] INFO  BaseClass - Static wait for 3 seconds.
+2025-04-17 02:30:06 [main] INFO  ActionDriver - ActionDriver initialized with wait: 30s.
+2025-04-17 02:30:06 [main] INFO  BaseClass - ActionDriver instance created for thread.
+2025-04-17 02:30:06 [main] INFO  ActionDriver - ActionDriver initialized with wait: 30s.
+2025-04-17 02:30:06 [main] INFO  ActionDriver - ActionDriver initialized with wait: 30s.
+2025-04-17 02:30:06 [main] INFO  ActionDriver - Entered text: 'admin' in By.name: username
+2025-04-17 02:30:06 [main] INFO  ActionDriver - Entered text: 'admin132' in By.cssSelector: input[type='password']
+2025-04-17 02:30:08 [main] INFO  ActionDriver - Clicked element: Tag: button, ID: , Name: , Text: Login
+2025-04-17 02:30:39 [main] WARN  ActionDriver - Element not visible: By.xpath: //*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\konda\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64856/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 288475f9605616202c1d817df1c25ac3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at com.orangehrm.actiondriver.ActionDriver.waitForElementVisible(ActionDriver.java:169) ~[classes/:?]
+	at com.orangehrm.actiondriver.ActionDriver.isDisplayed(ActionDriver.java:95) ~[classes/:?]
+	at com.orangehrm.pages.HomePage.isAdminTabVisible(HomePage.java:49) ~[classes/:?]
+	at com.orangeHRM.test.LoginPageTest.loginTest(LoginPageTest.java:83) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-04-17 02:30:49 [main] INFO  ActionDriver - Comparing text: actual='Invalid credentials' expected='Invalid credentials'
+2025-04-17 02:30:49 [main] INFO  BaseClass - WebDriver quit successfully.
+2025-04-17 02:30:49 [main] INFO  BaseClass - Test teardown completed.
+2025-04-17 02:30:49 [main] INFO  BaseClass - Starting test setup for class: LoginPageTest
+2025-04-17 02:30:50 [main] INFO  BaseClass - Chrome browser launched.
+2025-04-17 02:30:53 [main] INFO  BaseClass - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-04-17 02:30:56 [main] INFO  BaseClass - Static wait for 3 seconds.
+2025-04-17 02:30:56 [main] INFO  ActionDriver - ActionDriver initialized with wait: 30s.
+2025-04-17 02:30:56 [main] INFO  BaseClass - ActionDriver instance created for thread.
+2025-04-17 02:30:56 [main] INFO  ActionDriver - ActionDriver initialized with wait: 30s.
+2025-04-17 02:30:56 [main] INFO  ActionDriver - ActionDriver initialized with wait: 30s.
+2025-04-17 02:30:56 [main] INFO  ActionDriver - Entered text: 'admin32' in By.name: username
+2025-04-17 02:30:56 [main] INFO  ActionDriver - Entered text: 'admin34' in By.cssSelector: input[type='password']
+2025-04-17 02:30:58 [main] INFO  ActionDriver - Clicked element: Tag: button, ID: , Name: , Text: Login
+2025-04-17 02:31:29 [main] WARN  ActionDriver - Element not visible: By.xpath: //*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\konda\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57934}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57934/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 291b1e3caf6114cdd3fd737e3a9c6260
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at com.orangehrm.actiondriver.ActionDriver.waitForElementVisible(ActionDriver.java:169) ~[classes/:?]
+	at com.orangehrm.actiondriver.ActionDriver.isDisplayed(ActionDriver.java:95) ~[classes/:?]
+	at com.orangehrm.pages.HomePage.isAdminTabVisible(HomePage.java:49) ~[classes/:?]
+	at com.orangeHRM.test.LoginPageTest.loginTest(LoginPageTest.java:83) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-04-17 02:31:39 [main] INFO  ActionDriver - Comparing text: actual='Invalid credentials' expected='Invalid credentials'
+2025-04-17 02:31:39 [main] INFO  BaseClass - WebDriver quit successfully.
+2025-04-17 02:31:39 [main] INFO  BaseClass - Test teardown completed.
+2025-04-17 02:31:39 [main] INFO  BaseClass - Starting test setup for class: LoginPageTest
+2025-04-17 02:31:40 [main] INFO  BaseClass - Chrome browser launched.
+2025-04-17 02:31:43 [main] INFO  BaseClass - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-04-17 02:31:46 [main] INFO  BaseClass - Static wait for 3 seconds.
+2025-04-17 02:31:46 [main] INFO  ActionDriver - ActionDriver initialized with wait: 30s.
+2025-04-17 02:31:46 [main] INFO  BaseClass - ActionDriver instance created for thread.
+2025-04-17 02:31:46 [main] INFO  ActionDriver - ActionDriver initialized with wait: 30s.
+2025-04-17 02:31:46 [main] INFO  ActionDriver - ActionDriver initialized with wait: 30s.
+2025-04-17 02:31:47 [main] INFO  ActionDriver - Entered text: 'admin' in By.name: username
+2025-04-17 02:31:47 [main] INFO  ActionDriver - Entered text: 'admin123' in By.cssSelector: input[type='password']
+2025-04-17 02:31:58 [main] INFO  ActionDriver - Clicked element: Unknown Element
+2025-04-17 02:31:58 [main] INFO  ActionDriver - Element visibility: By.xpath: //*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span => true
+2025-04-17 02:31:58 [main] INFO  ActionDriver - Clicked element: Tag: span, ID: , Name: null, Text: FirstName LastName
+2025-04-17 02:32:09 [main] INFO  ActionDriver - Clicked element: Unknown Element
+2025-04-17 02:32:09 [main] INFO  BaseClass - WebDriver quit successfully.
+2025-04-17 02:32:09 [main] INFO  BaseClass - Test teardown completed.

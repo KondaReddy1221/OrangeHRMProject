@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="OrangeHRM Test Suite" parallel="tests" thread-count="2">
+    <!-- Test suite name and parallel execution settings -->
+    <listeners>
+        <!-- Listener to integrate Extent Reports with TestNG -->
+        <listener class-name="com.orangehrm.listeners.TestListener" />
+    </listeners>
+
+    <test name="Login Tests">
+        <!-- Test group for login related tests -->
+        <classes>
+            <!-- Test class for login page tests -->
+            <class name="com.orangeHRM.test.LoginPageTest">
+                <methods>
+                    <!-- Specify methods to include or exclude for this test -->
+                    <include name="highlightLoginFields"/>
+                    <include name="verifyValidLoginTest"/>
+                    <include name="inValidLoginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Home Page Tests">
+        <!-- Test group for home page tests -->
+        <classes>
+            <!-- Test class for home page tests -->
+            <class name="com.orangeHRM.test.HomePageTest">
+                <methods>
+                    <!-- Include methods for home page tests -->
+                    <include name="verifyOrangeHrmLogo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
